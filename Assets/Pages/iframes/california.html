@@ -12,7 +12,7 @@
         <h1>California Counties:</h1>
         <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
         <select id="countyLink" class="dropdown" name="calicounties" id="">
-            <option value="#" selected>California Counties</option>
+            <option value="#" selected>California Counties:</option>
             <option value="./../stateCounties/california/Alameda.html">Alameda</option>
             <option value="./../stateCounties/california/Colusa.html">Colusa</option>
             <option value="./../stateCounties/california/Del Norte.html">Del Norte</option>
@@ -20,9 +20,24 @@
             <option value="./../stateCounties/california/Madera.html">Madera</option>
             <option value="./../stateCounties/california/Mendocino.html">Mendocino</option>
         </select>
-        <a href="http://" target="_blank">
+        <a id="changeLink" href="http://" target="_blank">
             <button>Fetch</button>
         </a>
     </div>
+    <script>
+        // Reference inputfield and link
+
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById("changeLink");
+
+        // Listen for output changes
+        countyLink.addEventListener('input',function(){
+            // Get the value of the inputfield
+            const newUrl = countyLink.value;
+
+            // update the href attribute of the link
+            changeLink.href = newUrl
+        })
+    </script>
 </body>
 </html>

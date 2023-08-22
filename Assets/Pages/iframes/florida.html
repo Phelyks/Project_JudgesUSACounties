@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida iframe</title>
+    <link rel="stylesheet" href="./iframeStyles.css">
+    <link rel="icon" href="./../../Images/homeicon.png">
+</head>
+<body>
+    <div class="content">
+        <h1>Florida Counties:</h1>
+        <p>Select your county from drop down menu below and click the '<strong>Fetch</strong>' button:</p>
+        <select id="countyLink" class="dropdown" name="calicounties" id="">
+            <option value="#" selected>Florida Counties:</option>
+            <option value="./../stateCounties/california/Alameda.html">Alameda</option>
+            <option value="./../stateCounties/california/Colusa.html">Brevard</option>
+            <option value="./../stateCounties/california/Del Norte.html">Collier</option>
+            <option value="./../stateCounties/california/Los Angeles.html">Dixie</option>
+            <option value="./../stateCounties/california/Madera.html">Duvals</option>
+        </select>
+        <a id="changeLink" href="http://" target="_blank">
+            <button>Fetch</button>
+        </a>
+    </div>
+    <script>
+        // Reference inputfield and link
+
+        const countyLink = document.getElementById('countyLink');
+        const changeLink = document.getElementById("changeLink");
+
+        // Listen for output changes
+        countyLink.addEventListener('input',function(){
+            // Get the value of the inputfield
+            const newUrl = countyLink.value;
+
+            // update the href attribute of the link
+            changeLink.href = newUrl
+        })
+    </script>
+</body>
+</html>
