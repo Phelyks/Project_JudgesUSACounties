@@ -17,7 +17,7 @@ body {
 }
 
 .main {
-    width: 85%;
+    width: 92%;
     height: 90vh;
     background-color: rgba(235, 214, 214, 0.753);
     border-radius: 15px;
@@ -78,11 +78,15 @@ body {
     padding-left: 2px;
 }
 
+.nav h2 {
+    margin-right: 5px;
+}
+
 .content {
     width: 100%;
     position: relative;
-    height: 65vh;
-    background-color: blue;
+    height: 67vh;
+    /* background-color: blue; */
     border-radius: inherit;
 }
 
@@ -105,8 +109,8 @@ body {
 .active {
     color: blue;
     font-size: 20px;
-    background-color: white;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 10px;
 }
 
 /* For width 400px and larger */
