@@ -1,0 +1,18 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+h1 {
+    font-size: 25px;
+    text-shadow: 2.5px 3px 3px black;
+    color: rgb(223, 216, 216);
+}
+
+p {
+    font: 12px;
+}
