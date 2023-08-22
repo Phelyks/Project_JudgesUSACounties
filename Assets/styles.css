@@ -80,7 +80,8 @@ body {
 
 .nav h2 {
     margin-right: 5px;
-    border-bottom: 2px solid;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #3333337e;
 }
 
 .content {
