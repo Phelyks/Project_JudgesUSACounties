@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Norte County</title>
+    <link rel="stylesheet" href="./../../../styles.css">
+    <link rel="icon" href="./../../../Images/homeicon.png">
+    <script defer src="./../../../script.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="gavel">
+            <div class="gavel-items" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                <div>
+                    <a href="./../../../../index.html">
+                        <img src="./../../../Images/homeicon.png" alt="homeIcon" width="50px" height="auto" style="margin-left: 10px;">
+                    </a>
+                </div>
+                <div style="width: 80%; margin-left: 35px;"><h1 style="font-size: 25px; text-shadow: 2px 4px 3px rgba(3, 0, 0, 0.87); color: rgb(235, 221, 221);">Del Norte County</h1>
+                </div>
+            </div>            
+        </div>
+        <div class="section">
+            <div class="nav">
+                <h2>Judges:</h2>
+                <ul id="navList" class="navbar">
+                    <li class="navbar-item" onclick="document.getElementById('frame').src='./judges/Alameda/brad.html'">Brad Selignman</li>
+                    <li class="navbar-item" onclick="document.getElementById('frame').src='./judges/Alameda/elena.html#'">Elena Condes</li>
+                    <li class="navbar-item" onclick="document.getElementById('frame').src='./judges/Alameda/rebekah.html'">Rebekah Evenson</li>
+                    <li class="navbar-item" onclick="document.getElementById('frame').src='./judges/Alameda/victoria.html'">Victoria Kolakowski</li>
+                    <li class="navbar-item" onclick="document.getElementById('frame').src='./judges/Alameda/stephe.html'">Stephen Pulido</li>
+                </ul>
+            </div>
+            <div class="content">
+                <iframe id="frame" src="./judges/Alameda/brad.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
