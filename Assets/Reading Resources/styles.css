@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color: #333;
+}
+.navbar-item {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+}
+
+.active {
+    color: blue;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
